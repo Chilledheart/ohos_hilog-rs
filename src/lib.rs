@@ -102,6 +102,7 @@ fn ohos_log(
                 level,
                 0 as log_ffi::c_uint,
                 tag.as_ptr() as *const log_ffi::c_char,
+                "%s".as_ptr() as *const log_ffi::c_char,
                 msg.as_ptr() as *const log_ffi::c_char,
             );
         };
@@ -112,6 +113,7 @@ fn ohos_log(
                 level,
                 0 as log_ffi::c_uint,
                 tag.as_ptr() as *const log_ffi::c_char,
+                "%s".as_ptr() as *const log_ffi::c_char,
                 msg.as_ptr() as *const log_ffi::c_char,
             );
         };
