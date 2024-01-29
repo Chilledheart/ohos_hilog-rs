@@ -1,0 +1,27 @@
+[package]
+name = "ohos_hilog"
+version = "0.1.0"
+authors = ["The ohos_hilog Developers"]
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/Chilledheart/ohos_hilog-rs"
+description = """
+A logging implementation for `log` which hooks to ohos hilog output.
+"""
+keywords = ["ohos", "bindings", "log", "logger"]
+categories = ["api-bindings"]
+
+[features]
+default = ["regex"]
+regex = ["env_logger/regex"]
+
+[dependencies]
+once_cell = "1.9"
+ohos_hilog-sys = { git = "https://github.com/Chilledheart/ohos_hilog-sys-rs.git", branch = "master" }
+
+[dependencies.log]
+version = "0.4"
+
+[dependencies.env_logger]
+version = "0.10"
+default-features = false
