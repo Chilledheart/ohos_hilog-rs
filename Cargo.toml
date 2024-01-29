@@ -17,7 +17,7 @@ regex = ["env_logger/regex"]
 
 [dependencies]
 once_cell = "1.9"
-ohos_hilog-sys = { git = "https://github.com/Chilledheart/ohos_hilog-sys-rs.git", branch = "master" }
+ohos_hilog-sys = "0.1"
 
 [dependencies.log]
 version = "0.4"
